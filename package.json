@@ -1,6 +1,23 @@
 {
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Utilities collection library",
   "license": "MIT",
+  "repository": "https://github.com/AitorAlejandro/amanda",
+  "keywords": [
+    "amanda",
+    "npm",
+    "package",
+    "utility"
+  ],
+  "maintainers": [
+    {
+      "name": "AitorAlejandro",
+      "web": "https://github.com/AitorAlejandro"
+    }
+  ],
+  "bugs": {
+    "web": "https://github.com/AitorAlejandro/amanda/issues"
+  },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -8,7 +25,7 @@
     "src"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "scripts": {
     "start": "tsdx watch",
