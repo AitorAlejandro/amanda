@@ -2,13 +2,9 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var sum = function sum(a, b) {
-  {
-    console.log('boop');
-  }
+function isPrimitive(val) {
+  return Object(val) !== val;
+}
 
-  return a + b;
-};
-
-exports.sum = sum;
+exports.isPrimitive = isPrimitive;
 //# sourceMappingURL=amanda.cjs.development.js.map

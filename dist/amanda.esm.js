@@ -1,10 +1,6 @@
-var sum = function sum(a, b) {
-  if ('development' === process.env.NODE_ENV) {
-    console.log('boop');
-  }
+function isPrimitive(val) {
+  return Object(val) !== val;
+}
 
-  return a + b;
-};
-
-export { sum };
+export { isPrimitive };
 //# sourceMappingURL=amanda.esm.js.map
