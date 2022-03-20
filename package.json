@@ -48,7 +48,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "amanda",
+  "name": "@aitoralejandro/amanda",
   "author": "AitorAlejandro",
   "module": "dist/amanda.esm.js",
   "size-limit": [
