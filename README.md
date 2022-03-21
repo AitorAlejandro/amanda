@@ -1,3 +1,44 @@
+<h1 align="center">Welcome to @aitoralejandro/apricot 👋</h1>
+<p>
+  <a href="https://www.npmjs.com/package/@aitoralejandro/amanda" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/@aitoralejandro/amanda.svg">
+  </a>
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
+
+> Utility methods library
+
+## Install
+
+```sh
+npm i @aitoralejandro/amanda
+# or
+yarn add @aitoralejandro/amanda
+```
+
+## Run tests
+
+```sh
+npm test
+# or
+yarn test
+```
+
+## Author
+
+👤 **AitorAlejandro**
+
+- Website: http://aitoralejandro.github.io
+- Github: [@AitorAlejandro](https://github.com/AitorAlejandro)
+- LinkedIn: [@aitoralejandro](https://linkedin.com/in/aitoralejandro)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+
 # TSDX User Guide
 
 Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
