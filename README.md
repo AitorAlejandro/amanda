@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to @aitoralejandro/apricot 👋</h1>
+<h1 align="center">Welcome to @aitoralejandro/amanda 👋</h1>
 <p>
   <a href="https://www.npmjs.com/package/@aitoralejandro/amanda" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/@aitoralejandro/amanda.svg">
