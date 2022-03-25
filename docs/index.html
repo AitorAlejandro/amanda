@@ -40,16 +40,26 @@
       <main class="px-3">
         <div class="pb-5">
           <section class="mb-3">
-            <h2 class="text-start">isPrimitive</h2>
+            <h2 class="text-start">capitalize</h2>
             <pre><code class="language-js">
-            import { isPrimitive } from '@aitoralejandro/amanda';
-            // returns true is argument is a primitive js type
+            import { capitalize } from '@aitoralejandro/amanda';
+            // returns the passed string with the first letter in upper case
 
             // examples
-            isPrimitive('a string'); // returns true
-            isPrimitive(false); // returns true
-            isPrimitive([1, 2, 3]); // returns false
-            isPrimitive({}); // returns true
+            capitalize('sleepover'); // 'Sleepover'
+            capitalize('hi Amanda'); // 'Hi Amanda'
+          </code></pre>
+          </section>
+
+          <section class="mb-3">
+            <h2 class="text-start">decapitalize</h2>
+            <pre><code class="language-js">
+            import { decapitalize } from '@aitoralejandro/amanda';
+            // returns the passed string with the first letter in lower case
+
+            // examples
+            decapitalize('Sleepover'); // 'sleepover'
+            decapitalize('Hi Amanda'); // 'hi Amanda'
           </code></pre>
           </section>
 
@@ -77,6 +87,20 @@
             isEmptyArray([1, 2, 3]); // returns false
             isEmptyArray([]); // returns true
             isEmptyArray({}); // throws an error because is not an array
+          </code></pre>
+          </section>
+
+          <section class="mb-3">
+            <h2 class="text-start">isPrimitive</h2>
+            <pre><code class="language-js">
+            import { isPrimitive } from '@aitoralejandro/amanda';
+            // returns true is argument is a primitive js type
+
+            // examples
+            isPrimitive('a string'); // returns true
+            isPrimitive(false); // returns true
+            isPrimitive([1, 2, 3]); // returns false
+            isPrimitive({}); // returns true
           </code></pre>
           </section>
         </div>
