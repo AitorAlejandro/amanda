@@ -22,5 +22,9 @@ function isPrimitive(val) {
   return Object(val) !== val;
 }
 
-export { capitalize, decapitalize, isArray, isEmptyArray, isPrimitive };
+function isString(value) {
+  return typeof value === 'string' || value instanceof String;
+}
+
+export { capitalize, decapitalize, isArray, isEmptyArray, isPrimitive, isString };
 //# sourceMappingURL=amanda.esm.js.map

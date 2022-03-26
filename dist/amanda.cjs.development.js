@@ -26,9 +26,14 @@ function isPrimitive(val) {
   return Object(val) !== val;
 }
 
+function isString(value) {
+  return typeof value === 'string' || value instanceof String;
+}
+
 exports.capitalize = capitalize;
 exports.decapitalize = decapitalize;
 exports.isArray = isArray;
 exports.isEmptyArray = isEmptyArray;
 exports.isPrimitive = isPrimitive;
+exports.isString = isString;
 //# sourceMappingURL=amanda.cjs.development.js.map
