@@ -20,14 +20,14 @@
     <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="mb-5 fixed-top bg-light shadow">
         <div class="px-2">
-        <h1 class="float-md-start">amanda</h1>
-        <nav class="nav float-md-end justify-content-center">
-          <a class="nav-link" href="#">Home</a>
-          <a class="nav-link" href="https://github.com/AitorAlejandro/amanda"
-            >Code</a
-          >
-        </nav>
-      </div>
+          <h1 class="float-md-start">amanda</h1>
+          <nav class="nav float-md-end justify-content-center">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="https://github.com/AitorAlejandro/amanda"
+              >Code</a
+            >
+          </nav>
+        </div>
       </header>
       <div class="mb-5 mt-5 pt-3">
         <h2 class="fs-4">@aitoralejandro/amanda</h2>
@@ -78,6 +78,19 @@
           </section>
 
           <section class="list-group-item">
+            <h2 class="text-start">isBoolean</h2>
+            <pre><code class="language-js">
+            import { isBoolean } from '@aitoralejandro/amanda';
+            // returns true is the argument is boolean type
+
+            // examples
+            isBoolean(true); // returns true
+            isBoolean(false); // returns true
+            isBoolean([1, 2, 3]); // returns false
+          </code></pre>
+          </section>
+
+          <section class="list-group-item">
             <h2 class="text-start">isEmptyArray</h2>
             <pre><code class="language-js">
             import { isEmptyArray } from '@aitoralejandro/amanda';
@@ -94,7 +107,7 @@
             <h2 class="text-start">isNull</h2>
             <pre><code class="language-js">
             import { isNull } from '@aitoralejandro/amanda';
-            // returns true is the value passed is null
+            // returns true is the argument is null
 
             // examples
             isNull(null); // returns true
