@@ -1,6 +1,6 @@
 import { isNull } from '../src';
 
-describe('isPrimitive(...)', () => {
+describe('isNull(...)', () => {
   it('null should be true', () => {
     expect(isNull(null)).toBe(true);
   });
@@ -11,7 +11,7 @@ describe('isPrimitive(...)', () => {
     expect(isNull(0)).toBe(false);
   });
   it('123 should be false', () => {
-    expect(isNull(0)).toBe(false);
+    expect(isNull(123)).toBe(false);
   });
   it('"" should be false', () => {
     expect(isNull('')).toBe(false);
@@ -27,5 +27,8 @@ describe('isPrimitive(...)', () => {
   });
   it('Function should be false', () => {
     expect(isNull(() => {})).toBe(false);
+  });
+  it('false should be false', () => {
+    expect(isNull(false)).toBe(false);
   });
 });
