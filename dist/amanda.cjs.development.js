@@ -38,6 +38,10 @@ function isNumber(value) {
   return 'number' === typeof value && isFinite(value);
 }
 
+function isObject(value) {
+  return typeof value === 'object' && !isArray(value) && !isNull(value);
+}
+
 function isPrimitive(val) {
   return Object(val) !== val;
 }
@@ -54,6 +58,7 @@ exports.isEmptyArray = isEmptyArray;
 exports.isFunction = isFunction;
 exports.isNull = isNull;
 exports.isNumber = isNumber;
+exports.isObject = isObject;
 exports.isPrimitive = isPrimitive;
 exports.isString = isString;
 //# sourceMappingURL=amanda.cjs.development.js.map

@@ -6,6 +6,7 @@ import { isEmptyArray } from './isEmptyArray';
 import { isFunction } from './isFunction';
 import { isNull } from './isNull';
 import { isNumber } from './isNumber';
+import { isObject } from './isObject';
 import { isPrimitive } from './isPrimitive';
 import { isString } from './isString';
 
@@ -18,6 +19,7 @@ export {
   isFunction,
   isNull,
   isNumber,
+  isObject,
   isPrimitive,
   isString,
 };
