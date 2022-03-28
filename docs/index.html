@@ -48,7 +48,7 @@
             // examples
             capitalize('sleepover'); // 'Sleepover'
             capitalize('hi Amanda'); // 'Hi Amanda'
-          </code></pre>
+            </code></pre>
           </section>
 
           <section class="list-group-item">
@@ -60,7 +60,7 @@
             // examples
             decapitalize('Sleepover'); // 'sleepover'
             decapitalize('Hi Amanda'); // 'hi Amanda'
-          </code></pre>
+            </code></pre>
           </section>
 
           <section class="list-group-item">
@@ -74,7 +74,7 @@
             isArray(false); // returns false
             isArray([1, 2, 3]); // returns true
             isArray({}); // returns false
-          </code></pre>
+            </code></pre>
           </section>
 
           <section class="list-group-item">
@@ -87,7 +87,7 @@
             isBoolean(true); // returns true
             isBoolean(false); // returns true
             isBoolean([1, 2, 3]); // returns false
-          </code></pre>
+            </code></pre>
           </section>
 
           <section class="list-group-item">
@@ -100,7 +100,7 @@
             isEmptyArray([1, 2, 3]); // returns false
             isEmptyArray([]); // returns true
             isEmptyArray({}); // throws an error because is not an array
-          </code></pre>
+            </code></pre>
           </section>
 
           <section class="list-group-item">
@@ -113,7 +113,23 @@
             isNull(null); // returns true
             isNull(undefined); // returns false
             isNull({}); // returns false
-          </code></pre>
+            </code></pre>
+          </section>
+
+          <section class="list-group-item">
+            <h2 class="text-start">isNumber</h2>
+            <pre><code class="language-js">
+            import { isNumber } from '@aitoralejandro/amanda';
+            // returns true is the argument is a number
+
+            // examples
+            isNumber(0); // returns true
+            isNumber(123); // returns true
+            isNumber(123.456); // returns true
+            isNumber(NaN); // returns false
+            isNumber(Infinite); // returns false
+            isNumber('a string'); // returns false
+            </code></pre>
           </section>
 
           <section class="list-group-item">
@@ -127,7 +143,7 @@
             isPrimitive(false); // returns true
             isPrimitive([1, 2, 3]); // returns false
             isPrimitive({}); // returns true
-          </code></pre>
+            </code></pre>
           </section>
 
           <section class="list-group-item">
@@ -140,7 +156,7 @@
             isString('a string'); // returns true
             isString(false); // returns false
             isString([1, 2, 3]); // returns false
-          </code></pre>
+            </code></pre>
           </section>
         </div>
       </main>

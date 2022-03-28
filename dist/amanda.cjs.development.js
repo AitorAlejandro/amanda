@@ -14,6 +14,10 @@ function isArray(arr) {
   return Array.isArray(arr);
 }
 
+function isBoolean(value) {
+  return 'boolean' == typeof value;
+}
+
 function isEmptyArray(arr) {
   if (isArray(arr)) {
     return arr.length === 0;
@@ -24,6 +28,10 @@ function isEmptyArray(arr) {
 
 function isNull(value) {
   return null === value;
+}
+
+function isNumber(value) {
+  return 'number' === typeof value && isFinite(value);
 }
 
 function isPrimitive(val) {
@@ -37,8 +45,10 @@ function isString(value) {
 exports.capitalize = capitalize;
 exports.decapitalize = decapitalize;
 exports.isArray = isArray;
+exports.isBoolean = isBoolean;
 exports.isEmptyArray = isEmptyArray;
 exports.isNull = isNull;
+exports.isNumber = isNumber;
 exports.isPrimitive = isPrimitive;
 exports.isString = isString;
 //# sourceMappingURL=amanda.cjs.development.js.map
