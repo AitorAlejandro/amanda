@@ -22,6 +22,10 @@ function isEmptyArray(arr) {
   throw new Error('isEmptyArray: An array must be provided as an argument');
 }
 
+function isNull(value) {
+  return null === value;
+}
+
 function isPrimitive(val) {
   return Object(val) !== val;
 }
@@ -34,6 +38,7 @@ exports.capitalize = capitalize;
 exports.decapitalize = decapitalize;
 exports.isArray = isArray;
 exports.isEmptyArray = isEmptyArray;
+exports.isNull = isNull;
 exports.isPrimitive = isPrimitive;
 exports.isString = isString;
 //# sourceMappingURL=amanda.cjs.development.js.map
