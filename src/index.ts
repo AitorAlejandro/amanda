@@ -3,6 +3,7 @@ import { decapitalize } from './decapitalize';
 import { isArray } from './isArray';
 import { isBoolean } from './isBoolean';
 import { isEmptyArray } from './isEmptyArray';
+import { isFunction } from './isFunction';
 import { isNull } from './isNull';
 import { isNumber } from './isNumber';
 import { isPrimitive } from './isPrimitive';
@@ -14,6 +15,7 @@ export {
   isArray,
   isBoolean,
   isEmptyArray,
+  isFunction,
   isNull,
   isNumber,
   isPrimitive,

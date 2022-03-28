@@ -22,6 +22,10 @@ function isEmptyArray(arr) {
   throw new Error('isEmptyArray: An array must be provided as an argument');
 }
 
+function isFunction(value) {
+  return 'function' == typeof value;
+}
+
 function isNull(value) {
   return null === value;
 }
@@ -38,5 +42,5 @@ function isString(value) {
   return typeof value === 'string' || value instanceof String;
 }
 
-export { capitalize, decapitalize, isArray, isBoolean, isEmptyArray, isNull, isNumber, isPrimitive, isString };
+export { capitalize, decapitalize, isArray, isBoolean, isEmptyArray, isFunction, isNull, isNumber, isPrimitive, isString };
 //# sourceMappingURL=amanda.esm.js.map

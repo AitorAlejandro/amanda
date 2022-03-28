@@ -26,6 +26,10 @@ function isEmptyArray(arr) {
   throw new Error('isEmptyArray: An array must be provided as an argument');
 }
 
+function isFunction(value) {
+  return 'function' == typeof value;
+}
+
 function isNull(value) {
   return null === value;
 }
@@ -47,6 +51,7 @@ exports.decapitalize = decapitalize;
 exports.isArray = isArray;
 exports.isBoolean = isBoolean;
 exports.isEmptyArray = isEmptyArray;
+exports.isFunction = isFunction;
 exports.isNull = isNull;
 exports.isNumber = isNumber;
 exports.isPrimitive = isPrimitive;
