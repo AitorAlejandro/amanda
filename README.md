@@ -18,6 +18,14 @@ npm i @aitoralejandro/amanda
 yarn add @aitoralejandro/amanda
 ```
 
+## Example of use
+
+```javascript
+import { isString } from '@aitoralejandro/amanda';
+
+const result = isString('a string sample');
+```
+
 ## Run tests
 
 ```sh
