@@ -1,3 +1,4 @@
+import { buildQuery } from './buildQuery';
 import { capitalize } from './capitalize';
 import { decapitalize } from './decapitalize';
 import { isArray } from './isArray';
@@ -9,4 +10,4 @@ import { isNumber } from './isNumber';
 import { isObject } from './isObject';
 import { isPrimitive } from './isPrimitive';
 import { isString } from './isString';
-export { capitalize, decapitalize, isArray, isBoolean, isEmptyArray, isFunction, isNull, isNumber, isObject, isPrimitive, isString, };
+export { buildQuery, capitalize, decapitalize, isArray, isBoolean, isEmptyArray, isFunction, isNull, isNumber, isObject, isPrimitive, isString, };

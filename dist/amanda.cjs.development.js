@@ -2,6 +2,28 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
+function buildQuery(data) {
+  var queryArray = [];
+
+  var _loop = function _loop(property) {
+    if (Array.isArray(data[property])) {
+      var dataProperty = data[property];
+      dataProperty.forEach(function (item) {
+        queryArray.push([property, item]);
+      });
+    } else {
+      queryArray.push([property, data[property]]);
+    }
+  };
+
+  for (var property in data) {
+    _loop(property);
+  }
+
+  var query = new URLSearchParams(queryArray).toString();
+  return query;
+}
+
 function capitalize(str) {
   return "" + str.charAt(0).toUpperCase() + str.slice(1);
 }
@@ -50,6 +72,7 @@ function isString(value) {
   return typeof value === 'string' || value instanceof String;
 }
 
+exports.buildQuery = buildQuery;
 exports.capitalize = capitalize;
 exports.decapitalize = decapitalize;
 exports.isArray = isArray;

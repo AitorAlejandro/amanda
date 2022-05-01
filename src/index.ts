@@ -1,3 +1,4 @@
+import { buildQuery } from './buildQuery';
 import { capitalize } from './capitalize';
 import { decapitalize } from './decapitalize';
 import { isArray } from './isArray';
@@ -11,6 +12,7 @@ import { isPrimitive } from './isPrimitive';
 import { isString } from './isString';
 
 export {
+  buildQuery,
   capitalize,
   decapitalize,
   isArray,

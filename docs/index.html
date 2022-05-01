@@ -40,6 +40,24 @@
       <main class="px-3">
         <div class="pb-5 list-group">
           <section class="list-group-item">
+            <h2 class="text-start">buildQuery</h2>
+            <pre><code class="language-js">
+            import { buildQuery } from '@aitoralejandro/amanda';
+            // returns a queryString string from an object
+
+            // examples
+            const petfinderData = {
+              key: '12345',
+              shelterID: 'abc00',
+              count: '20',
+              animals: ['dogs', 'cats'],
+            };
+            window.location.href = `https://business.com?${buildQuery(petfinderData)}`;
+            // https://business.com?key=12345&shelterID=abc00&count=20&animals=dogs&animals=cats
+            </code></pre>
+          </section>
+
+          <section class="list-group-item">
             <h2 class="text-start">capitalize</h2>
             <pre><code class="language-js">
             import { capitalize } from '@aitoralejandro/amanda';
