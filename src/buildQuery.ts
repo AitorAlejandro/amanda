@@ -3,7 +3,7 @@ export function buildQuery(data: Record<string, string | string[]>): string {
 
   for (const property in data) {
     if (Array.isArray(data[property])) {
-      const dataProperty: string[] =  data[property] as string[];
+      const dataProperty: string[] = data[property] as string[];
       dataProperty.forEach(item => {
         queryArray.push([property, item]);
       });
